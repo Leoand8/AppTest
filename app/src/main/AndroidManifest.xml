@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".JumpActivity"></activity>
+        <activity android:name=".Calculator"></activity>
     </application>
 
 </manifest>

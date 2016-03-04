@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
 /**
  * 简易计算器程序
  * Created by Leoand8 on 2016/3/3.
@@ -86,6 +87,7 @@ public class Calculator extends Activity implements View.OnClickListener {
 
     /**
      * 根据ID获取点击事件
+     *
      * @param v
      */
     @Override
@@ -189,7 +191,7 @@ public class Calculator extends Activity implements View.OnClickListener {
             } else {
                 et_input.setText(result + "");
             }
-            if(d1%d2==0){
+            if (d1 % d2 == 0) {
                 int r = (int) result;
                 et_input.setText(r + "");
             }

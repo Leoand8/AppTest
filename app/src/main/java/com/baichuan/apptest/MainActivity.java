@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * 初始化
      */
     Button btn_main_calculator;
-    Button btn_main_jump;
+    Button btn_main_listview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,12 +22,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
          * 实例化
          */
         btn_main_calculator = (Button) findViewById(R.id.btn_main_calculator);
-        btn_main_jump = (Button) findViewById(R.id.btn_main_jump);
+        btn_main_listview = (Button) findViewById(R.id.btn_main_listview);
         /**
          * 设置点击事件
          */
         btn_main_calculator.setOnClickListener(this);
-        btn_main_jump.setOnClickListener(this);
+        btn_main_listview.setOnClickListener(this);
     }
 
     /**
@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_main_calculator:
                 mStartActivity(Calculator.class);
                 break;
-            case R.id.btn_main_jump:
-                mStartActivity(JumpActivity.class);
+            case R.id.btn_main_listview:
+                mStartActivity(ListView.class);
                 break;
             default:
                 break;

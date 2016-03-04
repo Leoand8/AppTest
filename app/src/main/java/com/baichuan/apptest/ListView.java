@@ -6,13 +6,13 @@ import android.os.Bundle;
 /**
  * Created by Administrator on 2016/3/1.
  */
-public class JumpActivity extends Activity {
+public class ListView extends Activity {
 
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_jump);
+		setContentView(R.layout.listview);
 
 	}
 }

@@ -10,7 +10,7 @@ import android.widget.EditText;
  * 简易计算器程序
  * Created by Leoand8 on 2016/3/3.
  */
-public class Calculator extends Activity implements View.OnClickListener {
+public class CalculatorActivity extends Activity implements View.OnClickListener {
     /**
      * 初始化按钮和EditText以及一个标志flag
      */
@@ -38,7 +38,7 @@ public class Calculator extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.calculator);
+        setContentView(R.layout.activity_calculator);
         /**
          * 实例化按钮和输入框
          */

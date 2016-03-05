@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     Button btn_main_calculator;
     Button btn_main_listview;
+    Button btn_main_picker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +24,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
          */
         btn_main_calculator = (Button) findViewById(R.id.btn_main_calculator);
         btn_main_listview = (Button) findViewById(R.id.btn_main_listview);
+        btn_main_picker = (Button) findViewById(R.id.btn_main_picker);
         /**
          * 设置点击事件
          */
         btn_main_calculator.setOnClickListener(this);
         btn_main_listview.setOnClickListener(this);
+        btn_main_picker.setOnClickListener(this);
     }
 
     /**
@@ -39,10 +42,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_main_calculator:
-                mStartActivity(Calculator.class);
+                mStartActivity(CalculatorActivity.class);
                 break;
             case R.id.btn_main_listview:
-                mStartActivity(ListView.class);
+                mStartActivity(ListViewActivity.class);
+                break;
+            case R.id.btn_main_picker:
+                mStartActivity(PickerActivity.class);
                 break;
             default:
                 break;

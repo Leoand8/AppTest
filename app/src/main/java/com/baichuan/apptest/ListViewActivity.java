@@ -18,7 +18,7 @@ import java.util.Map;
 /**
  * Created by Administrator on 2016/3/1.
  */
-public class ListView extends Activity implements AdapterView.OnItemClickListener,AbsListView.OnScrollListener{
+public class ListViewActivity extends Activity implements AdapterView.OnItemClickListener,AbsListView.OnScrollListener{
 
     private android.widget.ListView listView;
     private ArrayAdapter<String> arrayAdapter;//适配器
@@ -28,7 +28,7 @@ public class ListView extends Activity implements AdapterView.OnItemClickListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.listview);
+        setContentView(R.layout.activity_listview);
         listView = (android.widget.ListView) findViewById(R.id.listView);
         /**
          * 数组Adapter
@@ -80,10 +80,10 @@ public class ListView extends Activity implements AdapterView.OnItemClickListene
     public void onScrollStateChanged(AbsListView view, int scrollState) {
         switch (scrollState){
             case SCROLL_STATE_TOUCH_SCROLL:
-                Log.i("ListView","视图正在滑动，手指没有离开屏幕");
+                Log.i("ListViewActivity","视图正在滑动，手指没有离开屏幕");
                 break;
             case SCROLL_STATE_FLING:
-                Log.i("ListView","用户在手指离开屏幕之前，由于用力划了一下，视图仍靠惯性继续滑动，手指已经离开屏幕");
+                Log.i("ListViewActivity","用户在手指离开屏幕之前，由于用力划了一下，视图仍靠惯性继续滑动，手指已经离开屏幕");
                 Map<String,Object> map = new HashMap<String, Object>();
                 map.put("img",R.drawable.orange_bg);
                 map.put("text","orange");
@@ -91,7 +91,7 @@ public class ListView extends Activity implements AdapterView.OnItemClickListene
                 simpleAdapter.notifyDataSetChanged();
                 break;
             case SCROLL_STATE_IDLE:
-                Log.i("ListView","空闲，视图已经停止滑动");
+                Log.i("ListViewActivity","空闲，视图已经停止滑动");
                 break;
             default:
                 break;

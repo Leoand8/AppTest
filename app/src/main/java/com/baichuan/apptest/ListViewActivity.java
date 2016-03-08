@@ -54,7 +54,7 @@ public class ListViewActivity extends Activity implements AdapterView.OnItemClic
         // resource:列表项布局文件ID
         // from:Map中的键名
         // to:绑定数据视图中的ID，与from对应
-        simpleAdapter = new SimpleAdapter(this, getData(), R.layout.item, new String[]{"img", "text"}, new int[]{R.id.item_img, R.id.item_text});
+        simpleAdapter = new SimpleAdapter(this, getData(), R.layout.item_listview, new String[]{"img", "text"}, new int[]{R.id.item_img, R.id.item_text});
         listView.setAdapter(simpleAdapter);
         listView.setOnItemClickListener(this);
         listView.setOnScrollListener(this);

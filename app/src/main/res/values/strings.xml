@@ -3,6 +3,10 @@
     <string name="btn_main_calculator">计算器</string>
     <string name="btn_main_listview">ListView</string>
     <string name="btn_main_picker">Picker</string>
+    <string name="btn_main_gridview">GridView</string>
+    <string name="btn_main_spinner">Spinner</string>
+    <string name="btn_main_progressbar">ProgressBar</string>
+
     <string name="c">C</string>
     <string name="del">DEL</string>
     <string name="plus">+</string>
@@ -21,5 +25,4 @@
     <string name="eight">8</string>
     <string name="nine">9</string>
     <string name="point">.</string>
-    <string name="listitem">ListItem</string>
 </resources>

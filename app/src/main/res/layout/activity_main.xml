@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -13,17 +12,35 @@
         android:id="@+id/btn_main_calculator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_main_calculator"/>
+        android:text="@string/btn_main_calculator" />
 
     <Button
         android:id="@+id/btn_main_listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_main_listview"/>
+        android:text="@string/btn_main_listview" />
 
     <Button
         android:id="@+id/btn_main_picker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_main_picker"/>
+        android:text="@string/btn_main_picker" />
+
+    <Button
+        android:id="@+id/btn_main_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_main_gridview" />
+
+    <Button
+        android:text="@string/btn_main_spinner"
+        android:id="@+id/btn_main_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="@string/btn_main_progressbar"
+        android:id="@+id/btn_main_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

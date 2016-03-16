@@ -1,7 +1,7 @@
 package com.baichuan.apptest;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Created by Administrator on 2016/3/7.
  */
-public class SpinnerActivity extends Activity implements AdapterView.OnItemSelectedListener{
+public class SpinnerActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     private TextView textView;
     private Spinner spinner;

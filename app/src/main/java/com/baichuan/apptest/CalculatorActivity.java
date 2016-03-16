@@ -1,7 +1,7 @@
 package com.baichuan.apptest;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -10,7 +10,7 @@ import android.widget.EditText;
  * 简易计算器程序
  * Created by Leoand8 on 2016/3/3.
  */
-public class CalculatorActivity extends Activity implements View.OnClickListener {
+public class CalculatorActivity extends AppCompatActivity implements View.OnClickListener {
     /**
      * 初始化按钮和EditText以及一个标志flag
      */

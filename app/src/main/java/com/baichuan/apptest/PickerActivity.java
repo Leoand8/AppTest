@@ -1,9 +1,9 @@
 package com.baichuan.apptest;
 
-import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.DatePicker;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -13,7 +13,7 @@ import java.util.Calendar;
 /**
  * Created by Administrator on 2016/3/5.
  */
-public class PickerActivity extends Activity {
+public class PickerActivity extends AppCompatActivity {
 
     private DatePicker datePicker;
     private TimePicker timePicker;

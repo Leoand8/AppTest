@@ -1,7 +1,7 @@
 package com.baichuan.apptest;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
@@ -16,7 +16,7 @@ import java.util.Map;
 /**
  * Created by Administrator on 2016/3/7.
  */
-public class GridViewActivity extends Activity implements AdapterView.OnItemClickListener {
+public class GridViewActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     private GridView gridView;
     private List<Map<String, Object>> dataList;

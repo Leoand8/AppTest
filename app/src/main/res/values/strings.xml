@@ -6,6 +6,7 @@
     <string name="btn_main_gridview">GridView</string>
     <string name="btn_main_spinner">Spinner</string>
     <string name="btn_main_progressbar">ProgressBar</string>
+    <string name="webview">WebView</string>
 
     <string name="c">C</string>
     <string name="del">DEL</string>
@@ -25,4 +26,10 @@
     <string name="eight">8</string>
     <string name="nine">9</string>
     <string name="point">.</string>
+
+    <string name="refresh">刷新</string>
+    <string name="add">增加</string>
+    <string name="reduce">减少</string>
+    <string name="reset">重置</string>
+    <string name="showDialog">显示进度条对话框</string>
 </resources>

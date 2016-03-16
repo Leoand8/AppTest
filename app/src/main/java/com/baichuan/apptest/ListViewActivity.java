@@ -1,7 +1,7 @@
 package com.baichuan.apptest;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AbsListView;
@@ -18,7 +18,7 @@ import java.util.Map;
 /**
  * Created by Administrator on 2016/3/1.
  */
-public class ListViewActivity extends Activity implements AdapterView.OnItemClickListener,AbsListView.OnScrollListener{
+public class ListViewActivity extends AppCompatActivity implements AdapterView.OnItemClickListener,AbsListView.OnScrollListener{
 
     private android.widget.ListView listView;
     private ArrayAdapter<String> arrayAdapter;//适配器

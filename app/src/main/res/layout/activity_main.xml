@@ -49,4 +49,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/webview" />
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btn_main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment" />
 </LinearLayout>

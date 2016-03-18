@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btn_main_spinner;
     Button btn_main_progressbar;
     Button btn_main_webview;
+    Button btn_main_fragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_main_spinner = (Button) findViewById(R.id.btn_main_spinner);
         btn_main_progressbar = (Button) findViewById(R.id.btn_main_progressbar);
         btn_main_webview = (Button) findViewById(R.id.btn_main_webview);
+        btn_main_fragment = (Button) findViewById(R.id.btn_main_fragment);
         /**
          * 设置点击事件
          */
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_main_spinner.setOnClickListener(this);
         btn_main_progressbar.setOnClickListener(this);
         btn_main_webview.setOnClickListener(this);
+        btn_main_fragment.setOnClickListener(this);
     }
 
     /**
@@ -73,6 +76,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_main_webview:
                 mStartActivity(WebViewActivity.class);
+                break;
+            case R.id.btn_main_fragment:
+                mStartActivity(FragmentActivity.class);
                 break;
             default:
                 break;

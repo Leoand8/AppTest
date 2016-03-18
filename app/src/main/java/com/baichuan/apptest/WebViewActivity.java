@@ -53,13 +53,13 @@ public class WebViewActivity extends AppCompatActivity {
         //优先使用缓存加载
         webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
 
-        webView.setWebChromeClient(new WebChromeClient(){
+        webView.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
-                if(newProgress==100){
+                if (newProgress == 100) {
                     //网页加载完毕,关闭
                     closeDialog();
-                }else{
+                } else {
                     //网页正在加载，打开Dialog
                     openDialog(newProgress);
                 }
@@ -67,15 +67,15 @@ public class WebViewActivity extends AppCompatActivity {
             }
 
             private void closeDialog() {
-                if (dialog!=null&&dialog.isShowing()){
+                if (dialog != null && dialog.isShowing()) {
                     dialog.dismiss();
-                    dialog=null;
+                    dialog = null;
                 }
             }
 
             private void openDialog(int newProgress) {
-                if (dialog==null){
-                    dialog=new ProgressDialog(WebViewActivity.this);
+                if (dialog == null) {
+                    dialog = new ProgressDialog(WebViewActivity.this);
                     dialog.setTitle("正在加载");
                     dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
                     dialog.setProgress(newProgress);
@@ -84,13 +84,13 @@ public class WebViewActivity extends AppCompatActivity {
             }
         });
     }
-    
+
     //改写物理按键返回的逻辑
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             if (webView.canGoBack()) {
-                Toast.makeText(this,webView.getUrl(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, webView.getUrl(), Toast.LENGTH_SHORT).show();
                 webView.goBack();
                 return true;
             } else {

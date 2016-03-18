@@ -36,6 +36,12 @@
         <activity android:name=".WebViewActivity">
 
         </activity>
+        <activity android:name=".FragmentActivity">
+
+        </activity>
+        <activity android:name="com.baichuan.fragment.FragmentActivity2">
+
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

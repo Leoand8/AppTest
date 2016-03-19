@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.baichuan.fragment.FragmentActivity;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     /**
      * 初始化

@@ -36,10 +36,16 @@
         <activity android:name=".WebViewActivity">
 
         </activity>
-        <activity android:name=".FragmentActivity">
+        <activity android:name="com.baichuan.fragment.FragmentActivity">
 
         </activity>
         <activity android:name="com.baichuan.fragment.FragmentActivity2">
+
+        </activity>
+        <activity android:name="com.baichuan.fragment.FragmentActivity3">
+
+        </activity>
+        <activity android:name="com.baichuan.fragment.FragmentActivity4">
 
         </activity>
     </application>

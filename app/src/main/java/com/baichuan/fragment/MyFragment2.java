@@ -27,8 +27,6 @@ public class MyFragment2 extends Fragment {
         TextView textView = (TextView) view.findViewById(R.id.fragmentText);
         textView.setText("动态加载Fragment");
         return view;
-
-
 //        return super.onCreateView(inflater, container, savedInstanceState);
     }
 }

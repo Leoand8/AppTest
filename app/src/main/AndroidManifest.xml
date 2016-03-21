@@ -48,6 +48,9 @@
         <activity android:name="com.baichuan.fragment.FragmentActivity4">
 
         </activity>
+        <activity android:name=".ViewPagerActivity">
+
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

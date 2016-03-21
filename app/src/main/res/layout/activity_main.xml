@@ -51,9 +51,16 @@
         android:text="@string/webview" />
 
     <Button
-        android:textAllCaps="false"
         android:id="@+id/btn_main_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/fragment" />
+        android:text="@string/fragment"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/viewpager"
+        android:textAllCaps="false" />
 </LinearLayout>

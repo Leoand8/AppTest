@@ -37,4 +37,5 @@
     <string name="radiobutton2">动态加载</string>
     <string name="radiobutton3">生命周期</string>
     <string name="radiobutton4">传值通信</string>
+    <string name="viewpager">ViewPager</string>
 </resources>

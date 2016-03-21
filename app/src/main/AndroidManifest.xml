@@ -51,6 +51,9 @@
         <activity android:name=".ViewPagerActivity">
 
         </activity>
+        <activity android:name=".ViewFlipperActivity">
+
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

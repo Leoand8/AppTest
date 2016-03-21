@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btn_main_webview;
     Button btn_main_fragment;
     Button btn_main_viewpager;
+    Button btn_main_viewflipper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_main_webview = (Button) findViewById(R.id.btn_main_webview);
         btn_main_fragment = (Button) findViewById(R.id.btn_main_fragment);
         btn_main_viewpager = (Button) findViewById(R.id.btn_main_viewpager);
+        btn_main_viewflipper = (Button) findViewById(R.id.btn_main_viewflipper);
         /**
          * 设置点击事件
          */
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_main_webview.setOnClickListener(this);
         btn_main_fragment.setOnClickListener(this);
         btn_main_viewpager.setOnClickListener(this);
+        btn_main_viewflipper.setOnClickListener(this);
     }
 
     /**
@@ -87,6 +90,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_main_viewpager:
                 mStartActivity(ViewPagerActivity.class);
+                break;
+            case R.id.btn_main_viewflipper:
+                mStartActivity(ViewFlipperActivity.class);
+                break;
             default:
                 break;
         }

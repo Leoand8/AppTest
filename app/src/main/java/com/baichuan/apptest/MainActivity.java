@@ -9,9 +9,7 @@ import android.widget.Button;
 import com.baichuan.fragment.FragmentActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    /**
-     * 初始化
-     */
+
     Button btn_main_calculator;
     Button btn_main_listview;
     Button btn_main_picker;
@@ -22,6 +20,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btn_main_fragment;
     Button btn_main_viewpager;
     Button btn_main_viewflipper;
+    Button btn_main_scrollview;
+    Button btn_main_gallery;
+    Button btn_main_seekbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         /**
          * 实例化
          */
+        /*
+      初始化
+     */
         btn_main_calculator = (Button) findViewById(R.id.btn_main_calculator);
         btn_main_listview = (Button) findViewById(R.id.btn_main_listview);
         btn_main_picker = (Button) findViewById(R.id.btn_main_picker);
@@ -41,6 +45,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_main_fragment = (Button) findViewById(R.id.btn_main_fragment);
         btn_main_viewpager = (Button) findViewById(R.id.btn_main_viewpager);
         btn_main_viewflipper = (Button) findViewById(R.id.btn_main_viewflipper);
+        btn_main_scrollview = (Button) findViewById(R.id.btn_main_scrollview);
+        btn_main_gallery = (Button) findViewById(R.id.btn_main_gallery);
+        btn_main_seekbar = (Button) findViewById(R.id.btn_main_seekbar);
+
         /**
          * 设置点击事件
          */
@@ -54,6 +62,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_main_fragment.setOnClickListener(this);
         btn_main_viewpager.setOnClickListener(this);
         btn_main_viewflipper.setOnClickListener(this);
+        btn_main_scrollview.setOnClickListener(this);
+        btn_main_gallery.setOnClickListener(this);
+        btn_main_seekbar.setOnClickListener(this);
     }
 
     /**
@@ -93,6 +104,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_main_viewflipper:
                 mStartActivity(ViewFlipperActivity.class);
+                break;
+            case R.id.btn_main_scrollview:
+                mStartActivity(ScrollViewActivity.class);
+                break;
+            case R.id.btn_main_gallery:
+                mStartActivity(GalleryActivity.class);
+                break;
+            case R.id.btn_main_seekbar:
+                mStartActivity(SeekBarActivity.class);
                 break;
             default:
                 break;

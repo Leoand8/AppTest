@@ -39,4 +39,24 @@
     <string name="radiobutton4">传值通信</string>
     <string name="viewpager">ViewPager</string>
     <string name="viewflipper">ViewFlipper</string>
+    <string name="scrollview">ScrollView</string>
+    <string name="content">
+        \tANDROID
+        \n
+        \tAndroid是一种基于Linux的自由及开放源代码的操作系统，主要使用于移动设备，如智能手机和平板电脑，由Google公司和开放手机联盟领导及开发。尚未有统一中文名称，中国大陆地区较多人使用“安卓”或“安致”。\n
+        \n
+        \tAndroid操作系统最初由Andy Rubin开发，主要支持手机。2005年8月由Google收购注资。\n
+        \n
+        \t2007年11月，Google与84家硬件制造商、软件开发商及电信营运商组建开放手机联盟共同研发改良Android系统。随后Google以Apache开源许可证的授权方式，发布了Android的源代码。\n
+        \n
+        \t第一部Android智能手机发布于2008年10月。Android逐渐扩展到平板电脑及其他领域上，如电视、数码相机、游戏机等。2011年第一季度，Android在全球的市场份额首次超过塞班系统，跃居全球第一。 2013年的第四季度，Android平台手机的全球市场份额已经达到78.1%。[1]  2013年09月24日谷歌开发的操作系统Android在迎来了5岁生日，全世界采用这款系统的设备数量已经达到10亿台。\n
+        \n
+        \t2003年10月，Andy Rubin等人创建Android公司，并组建Android团队。\n
+        \n
+        \t2005年8月17日，Google低调收购了成立仅22个月的高科技企业Android及其团队。安迪鲁宾成为Google公司工程部副总裁，继续负责Android项目。\n
+        \n
+        \t2007年11月5日，谷歌公司正式向外界展示了这款名为Android的操作系统，并且在这天谷歌宣布建立一个全球性的联盟组织，该组织由34家手机制造商、软件开发商、电信运营商以及芯片制造商共同组成，并与84家硬件制造商、软件开发商及电信营运商组成开放手持设备联盟（Open Handset Alliance）来共同研发改良Android系统，这一联盟将支持谷歌发布的手机操作系统以及应用软件，Google以Apache免费开源许可证的授权方式，发布了Android的源代码。
+    </string>
+    <string name="gallery">Gallery</string>
+    <string name="seekbar">SeekBar</string>
 </resources>

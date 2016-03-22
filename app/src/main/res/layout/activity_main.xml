@@ -8,66 +8,94 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-    <Button
-        android:id="@+id/btn_main_calculator"
+    <com.baichuan.myClass.AutoNextLineLinearlayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_main_calculator" />
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/btn_main_listview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_main_listview" />
+        <Button
+            android:id="@+id/btn_main_calculator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_main_calculator" />
 
-    <Button
-        android:id="@+id/btn_main_picker"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_main_picker" />
+        <Button
+            android:id="@+id/btn_main_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_main_listview" />
 
-    <Button
-        android:id="@+id/btn_main_gridview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_main_gridview" />
+        <Button
+            android:id="@+id/btn_main_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_main_picker" />
 
-    <Button
-        android:id="@+id/btn_main_spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_main_spinner" />
+        <Button
+            android:id="@+id/btn_main_gridview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_main_gridview" />
 
-    <Button
-        android:id="@+id/btn_main_progressbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_main_progressbar" />
+        <Button
+            android:id="@+id/btn_main_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_main_spinner" />
 
-    <Button
-        android:id="@+id/btn_main_webview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/webview" />
+        <Button
+            android:id="@+id/btn_main_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_main_progressbar" />
 
-    <Button
-        android:id="@+id/btn_main_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/fragment"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_main_webview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/webview" />
 
-    <Button
-        android:id="@+id/btn_main_viewpager"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/viewpager"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_main_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment"
+            android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_main_viewflipper"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/viewflipper"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_main_viewpager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/viewpager"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_main_viewflipper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/viewflipper"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_main_scrollview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scrollview"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_main_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gallery"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_main_seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seekbar"
+            android:textAllCaps="false" />
+    </com.baichuan.myClass.AutoNextLineLinearlayout>
+
 </LinearLayout>

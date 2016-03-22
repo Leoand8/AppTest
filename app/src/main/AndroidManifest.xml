@@ -54,6 +54,15 @@
         <activity android:name=".ViewFlipperActivity">
 
         </activity>
+        <activity android:name=".ScrollViewActivity">
+
+        </activity>
+        <activity android:name=".GalleryActivity">
+
+        </activity>
+        <activity android:name=".SeekBarActivity">
+
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

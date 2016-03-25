@@ -115,6 +115,7 @@
     <color name="midnightblue">#191970</color><!--中灰兰色 -->
     <color name="navy">#000080</color><!--海军色 -->
     <color name="royalblue">#4169e1</color><!--皇家蓝 -->
+    <color name="dodgerblue">#1e90ff</color><!--闪兰色 -->
     <color name="azure">#f0ffff</color><!--天蓝色 -->
     <color name="skyblue">#87ceeb</color><!--天蓝色 -->
     <color name="deepskyblue">#00bfff</color><!--深天蓝色 -->
@@ -130,7 +131,6 @@
     <color name="steelblue">#4682b4</color><!--钢兰色 -->
     <color name="lightsteelblue">#b0c4de</color><!--亮钢兰色 -->
     <color name="cornflowerblue">#6495ed</color><!--菊兰色 -->
-    <color name="dodgerblue">#1e90ff</color><!--闪兰色 -->
     <color name="cadetblue">#5f9ea0</color><!--军兰色 -->
     <color name="blueviolet">#8a2be2</color><!--紫罗兰蓝色 -->
     <color name="purple">#800080</color><!--紫色 -->

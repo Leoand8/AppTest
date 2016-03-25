@@ -4,7 +4,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <include layout="@layout/common_title" />
+
     <SeekBar
+        android:thumb="@drawable/my_seek_thumb"
         android:id="@+id/seekbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

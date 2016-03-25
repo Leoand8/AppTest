@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewStub;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -27,6 +28,8 @@ public class ProgressBarActivity extends AppCompatActivity implements View.OnCli
     private TextView text;
     private ProgressDialog progressDialog;
     private Button showDialog;
+    private Button btn_viewstub;
+    private ViewStub viewStub;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +52,9 @@ public class ProgressBarActivity extends AppCompatActivity implements View.OnCli
         reset = (Button) findViewById(R.id.reset);
         text = (TextView) findViewById(R.id.text111);
         showDialog = (Button) findViewById(R.id.showDialog);
+        btn_viewstub = (Button) findViewById(R.id.viewstub_btn);
+        viewStub = (ViewStub) findViewById(R.id.viewstub);
+
         //获取第一进度条的进度
         int first = progress.getProgress();
         //获取第二进度条的进度
@@ -60,6 +66,7 @@ public class ProgressBarActivity extends AppCompatActivity implements View.OnCli
         reduce.setOnClickListener(this);
         reset.setOnClickListener(this);
         showDialog.setOnClickListener(this);
+        btn_viewstub.setOnClickListener(this);
     }
 
     //创建Menu，在标题栏显示加载进度
@@ -117,7 +124,7 @@ public class ProgressBarActivity extends AppCompatActivity implements View.OnCli
                 break;
             case R.id.showDialog:
                 //新建对象
-                progressDialog=new ProgressDialog(ProgressBarActivity.this);
+                progressDialog = new ProgressDialog(ProgressBarActivity.this);
                 progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
                 progressDialog.setTitle("百川教育");
                 progressDialog.setMessage("欢迎大家支持百川教育");
@@ -130,12 +137,16 @@ public class ProgressBarActivity extends AppCompatActivity implements View.OnCli
                 progressDialog.setButton(DialogInterface.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(ProgressBarActivity.this,"确定点击百川教育",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ProgressBarActivity.this, "确定点击百川教育", Toast.LENGTH_SHORT).show();
                     }
                 });
                 //是否可以通过返回按钮退出对话框
                 progressDialog.setCancelable(true);
                 progressDialog.show();
+                break;
+            case R.id.viewstub_btn:
+//                viewStub.inflate();
+                viewStub.setVisibility(View.VISIBLE);
                 break;
             default:
                 break;

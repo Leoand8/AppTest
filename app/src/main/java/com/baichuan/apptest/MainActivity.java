@@ -10,6 +10,9 @@ import com.baichuan.fragment.FragmentActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    /**
+     * 初始化
+     */
     Button btn_main_calculator;
     Button btn_main_listview;
     Button btn_main_picker;
@@ -23,18 +26,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btn_main_scrollview;
     Button btn_main_gallery;
     Button btn_main_seekbar;
+    Button btn_main_listview2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
-
         /**
          * 实例化
          */
-        /*
-      初始化
-     */
         btn_main_calculator = (Button) findViewById(R.id.btn_main_calculator);
         btn_main_listview = (Button) findViewById(R.id.btn_main_listview);
         btn_main_picker = (Button) findViewById(R.id.btn_main_picker);
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_main_scrollview = (Button) findViewById(R.id.btn_main_scrollview);
         btn_main_gallery = (Button) findViewById(R.id.btn_main_gallery);
         btn_main_seekbar = (Button) findViewById(R.id.btn_main_seekbar);
+        btn_main_listview2 = (Button) findViewById(R.id.btn_main_listview2);
 
         /**
          * 设置点击事件
@@ -65,6 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_main_scrollview.setOnClickListener(this);
         btn_main_gallery.setOnClickListener(this);
         btn_main_seekbar.setOnClickListener(this);
+        btn_main_listview2.setOnClickListener(this);
     }
 
     /**
@@ -113,6 +116,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_main_seekbar:
                 mStartActivity(SeekBarActivity.class);
+                break;
+            case R.id.btn_main_listview2:
+                mStartActivity(ListViewActivity2.class);
                 break;
             default:
                 break;

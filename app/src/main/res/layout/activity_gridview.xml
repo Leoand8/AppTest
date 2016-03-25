@@ -3,6 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
     <!--
         android:verticalSpacing=""两行之间的间距
         android:horizontalSpacing=""两列之间的间距

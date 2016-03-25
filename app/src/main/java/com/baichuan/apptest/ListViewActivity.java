@@ -85,8 +85,8 @@ public class ListViewActivity extends AppCompatActivity implements AdapterView.O
             case SCROLL_STATE_FLING:
                 Log.i("ListViewActivity","用户在手指离开屏幕之前，由于用力划了一下，视图仍靠惯性继续滑动，手指已经离开屏幕");
                 Map<String,Object> map = new HashMap<String, Object>();
-                map.put("img",R.drawable.orange_bg);
-                map.put("text","orange");
+                map.put("img",R.mipmap.ic_launcher);
+                map.put("text","Scroll");
                 datalist.add(map);
                 simpleAdapter.notifyDataSetChanged();
                 break;

@@ -1,4 +1,4 @@
-package com.baichuan.myClass;
+package com.baichuan.otherclass;
 
 import android.content.Context;
 import android.util.AttributeSet;

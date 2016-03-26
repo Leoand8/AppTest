@@ -27,91 +27,91 @@ import java.util.List;
  */
 public class NewsActivity extends AppCompatActivity {
 
-    private ListView mListView;
-    private static String URL = "http://www.imooc.com/api/teacher?type=4&num=30";
+	private ListView mListView;
+	private static String URL = "http://www.imooc.com/api/teacher?type=4&num=30";
 
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_news);
-        mListView = (ListView) findViewById(R.id.news_listview);
-        new NewsAsyncTask().execute(URL);
-    }
+	@Override
+	protected void onCreate(@Nullable Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_news);
+		mListView = (ListView) findViewById(R.id.news_listview);
+		new NewsAsyncTask().execute(URL);
+	}
 
-    /**
-     * 将URL对应的JSON格式数据转化为我们所封装的NewsBean对象
-     *
-     * @param url
-     * @return
-     */
-    private List<NewsBean> getJsonData(String url) {
-        List<NewsBean> newsBeanList = new ArrayList<>();
-        try {
-            String jsonString = readStream(new URL(url).openStream());
-            JSONObject jsonObject;
-            NewsBean newsBean;
-            try {
-                jsonObject = new JSONObject(jsonString);
-                JSONArray jsonArray = jsonObject.getJSONArray("data");
-                for (int i = 0; i < jsonArray.length(); i++) {
-                    jsonObject = jsonArray.getJSONObject(i);
-                    newsBean = new NewsBean();
-                    newsBean.newsIconUrl = jsonObject.getString("picSmall");
-                    newsBean.newsTitle = jsonObject.getString("name");
-                    newsBean.newsContent = jsonObject.getString("description");
-                    newsBeanList.add(newsBean);
-                }
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+	/**
+	 * 将URL对应的JSON格式数据转化为我们所封装的NewsBean对象
+	 *
+	 * @param url
+	 * @return
+	 */
+	private List<NewsBean> getJsonData(String url) {
+		List<NewsBean> newsBeanList = new ArrayList<>();
+		try {
+			String jsonString = readStream(new URL(url).openStream());
+			JSONObject jsonObject;
+			NewsBean newsBean;
+			try {
+				jsonObject = new JSONObject(jsonString);
+				JSONArray jsonArray = jsonObject.getJSONArray("data");
+				for (int i = 0; i < jsonArray.length(); i++) {
+					jsonObject = jsonArray.getJSONObject(i);
+					newsBean = new NewsBean();
+					newsBean.newsIconUrl = jsonObject.getString("picSmall");
+					newsBean.newsTitle = jsonObject.getString("name");
+					newsBean.newsContent = jsonObject.getString("description");
+					newsBeanList.add(newsBean);
+				}
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
-        return newsBeanList;
-    }
+		return newsBeanList;
+	}
 
-    /**
-     * 通过InputStream解析网页返回的数据
-     *
-     * @param is
-     * @return
-     */
-    private String readStream(InputStream is) {
-        InputStreamReader isr;
-        String result = "";
-        try {
-            String line = "";
-            isr = new InputStreamReader(is, "utf-8");
-            BufferedReader br = new BufferedReader(isr);
-            while ((line = br.readLine()) != null) {
-                result += line;
-            }
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+	/**
+	 * 通过InputStream解析网页返回的数据
+	 *
+	 * @param is
+	 * @return
+	 */
+	private String readStream(InputStream is) {
+		InputStreamReader isr;
+		String result = "";
+		try {
+			String line = "";
+			isr = new InputStreamReader(is, "utf-8");
+			BufferedReader br = new BufferedReader(isr);
+			while ((line = br.readLine()) != null) {
+				result += line;
+			}
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
-        return result;
-    }
+		return result;
+	}
 
-    /**
-     * 实现网络的异步访问
-     */
-    class NewsAsyncTask extends AsyncTask<String, Void, List<NewsBean>> {
+	/**
+	 * 实现网络的异步访问
+	 */
+	class NewsAsyncTask extends AsyncTask<String, Void, List<NewsBean>> {
 
-        @Override
-        protected List<NewsBean> doInBackground(String... params) {
-            return getJsonData(params[0]);
-        }
+		@Override
+		protected List<NewsBean> doInBackground(String... params) {
+			return getJsonData(params[0]);
+		}
 
-        @Override
-        protected void onPostExecute(List<NewsBean> newsBeen) {
-            super.onPostExecute(newsBeen);
-            NewsAdapter adapter = new NewsAdapter(NewsActivity.this, newsBeen);
-            mListView.setAdapter(adapter);
-        }
-    }
+		@Override
+		protected void onPostExecute(List<NewsBean> newsBeen) {
+			super.onPostExecute(newsBeen);
+			NewsAdapter adapter = new NewsAdapter(NewsActivity.this, newsBeen);
+			mListView.setAdapter(adapter);
+		}
+	}
 
 }

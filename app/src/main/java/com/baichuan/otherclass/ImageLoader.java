@@ -2,7 +2,9 @@ package com.baichuan.otherclass;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.os.Message;
+import android.util.LruCache;
 import android.widget.ImageView;
 
 import java.io.BufferedInputStream;
@@ -18,6 +20,32 @@ public class ImageLoader {
 
     private ImageView mImageView;
     private String mUrl;
+    private LruCache<String,Bitmap> mCaches;//创建cache
+
+    public ImageLoader() {
+        //获取最大可用内存
+        int maxMemory = (int) Runtime.getRuntime().maxMemory();
+        int cacheSize = maxMemory / 4;
+        mCaches = new LruCache<String,Bitmap>(cacheSize) {
+            @Override
+            protected int sizeOf(String key, Bitmap value) {
+                //在每次存入缓存的时候调用
+                return value.getByteCount();
+            }
+        };
+    }
+
+    //增加到缓存
+    public void addBitmapToCache(String url, Bitmap bitmap) {
+        if (getBitmapFromCache(url) == null) {
+            mCaches.put(url, bitmap);
+        }
+    }
+
+    //从缓存中获取数据
+    public Bitmap getBitmapFromCache(String url) {
+        return mCaches.get(url);
+    }
 
     private android.os.Handler mHandler = new android.os.Handler() {
 
@@ -33,7 +61,7 @@ public class ImageLoader {
     //使用多线程的方式去加载图片
     public void showImageByThread(ImageView imageView, final String url) {
         mImageView = imageView;
-        mUrl=url;
+        mUrl = url;
 
         new Thread() {
 
@@ -69,4 +97,39 @@ public class ImageLoader {
         }
         return null;
     }
+
+    public void showImageByAsyncTask(ImageView imageView, String url) {
+        Bitmap bitmap = getBitmapFromCache(url);
+        if (bitmap == null) {
+            new NewsAsyncTask(imageView, url).execute(url);
+        } else {
+
+        }
+    }
+
+    private class NewsAsyncTask extends AsyncTask<String, Void, Bitmap> {
+
+        private ImageView mImageView;
+        private String mUrl;
+
+        public NewsAsyncTask(ImageView imageView, String url) {
+            mImageView = imageView;
+            mUrl = url;
+        }
+
+        @Override
+        protected Bitmap doInBackground(String... params) {
+
+            return getBitmapFromURL(params[0]);
+        }
+
+        @Override
+        protected void onPostExecute(Bitmap bitmap) {
+            super.onPostExecute(bitmap);
+            if (mImageView.getTag().equals(mUrl)) {
+                mImageView.setImageBitmap(bitmap);
+            }
+        }
+    }
+
 }

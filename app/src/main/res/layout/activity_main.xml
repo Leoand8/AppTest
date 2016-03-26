@@ -111,6 +111,20 @@
                 android:text="ListView2"
                 android:textAllCaps="false" />
 
+            <Button
+                android:id="@+id/btn_main_asynctask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AsyncTask"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_main_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="News异步加载"
+                android:textAllCaps="false" />
+
         </com.baichuan.otherclass.AutoNextLineLinearlayout>
 
     </LinearLayout>

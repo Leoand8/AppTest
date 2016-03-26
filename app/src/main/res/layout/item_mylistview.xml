@@ -1,43 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <?xml version="1.0" encoding="utf-8"?>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_mlist_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/item_mlist_title"
         android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@+id/item_mlist_img"
+        android:gravity="center"
+        android:text="Title"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/item_mlist_content"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/item_mlist_title"
+        android:layout_toEndOf="@+id/item_mlist_img"
+        android:gravity="center_vertical"
+        android:text="Content"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/item_mlist_checkbox"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_alignParentRight="true"
+        android:focusable="false" />
 
-        <ImageView
-            android:id="@+id/item_mlist_img"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@mipmap/ic_launcher" />
-
-        <TextView
-            android:id="@+id/item_mlist_title"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_toEndOf="@+id/item_mlist_img"
-            android:gravity="center"
-            android:text="Title"
-            android:textSize="25sp" />
-
-        <TextView
-            android:id="@+id/item_mlist_content"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_below="@+id/item_mlist_title"
-            android:layout_toEndOf="@+id/item_mlist_img"
-            android:gravity="center_vertical"
-            android:text="Content"
-            android:textSize="20sp" />
-
-        <CheckBox
-            android:id="@+id/item_mlist_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:focusable="false" />
-    </RelativeLayout>
-</LinearLayout>
+</RelativeLayout>

@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btn_main_gallery;
     Button btn_main_seekbar;
     Button btn_main_listview2;
+    Button btn_main_asynctask;
+    Button btn_main_news;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +52,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_main_gallery = (Button) findViewById(R.id.btn_main_gallery);
         btn_main_seekbar = (Button) findViewById(R.id.btn_main_seekbar);
         btn_main_listview2 = (Button) findViewById(R.id.btn_main_listview2);
+        btn_main_asynctask = (Button) findViewById(R.id.btn_main_asynctask);
+        btn_main_news = (Button) findViewById(R.id.btn_main_news);
 
         /**
          * 设置点击事件
@@ -68,6 +72,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_main_gallery.setOnClickListener(this);
         btn_main_seekbar.setOnClickListener(this);
         btn_main_listview2.setOnClickListener(this);
+        btn_main_asynctask.setOnClickListener(this);
+        btn_main_news.setOnClickListener(this);
     }
 
     /**
@@ -119,6 +125,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_main_listview2:
                 mStartActivity(ListViewActivity2.class);
+                break;
+            case R.id.btn_main_asynctask:
+                mStartActivity(AsyncTaskActivity.class);
+                break;
+            case R.id.btn_main_news:
+                mStartActivity(NewsActivity.class);
                 break;
             default:
                 break;

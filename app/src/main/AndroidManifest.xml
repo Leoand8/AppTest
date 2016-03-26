@@ -66,6 +66,12 @@
         <activity android:name=".ListViewActivity2">
 
         </activity>
+        <activity android:name=".AsyncTaskActivity">
+
+        </activity>
+        <activity android:name=".NewsActivity">
+
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

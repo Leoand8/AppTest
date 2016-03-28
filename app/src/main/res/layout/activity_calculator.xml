@@ -29,15 +29,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginTop="20dp"
+            android:layout_weight="1"
             android:gravity="center"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn_clear"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/white_selector"
                 android:gravity="end|bottom"
@@ -51,7 +52,7 @@
             <Button
                 android:id="@+id/btn_del"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/white_selector"
@@ -66,7 +67,7 @@
             <Button
                 android:id="@+id/btn_divide"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/white_selector"
@@ -81,7 +82,7 @@
             <Button
                 android:id="@+id/btn_multiply"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/white_selector"
@@ -96,15 +97,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginTop="20dp"
+            android:layout_weight="1"
             android:gravity="center"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn_7"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/white_selector"
                 android:gravity="end|bottom"
@@ -118,7 +120,7 @@
             <Button
                 android:id="@+id/btn_8"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/white_selector"
@@ -133,7 +135,7 @@
             <Button
                 android:id="@+id/btn_9"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/white_selector"
@@ -148,7 +150,7 @@
             <Button
                 android:id="@+id/btn_minus"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/white_selector"
@@ -163,15 +165,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginTop="20dp"
+            android:layout_weight="1"
             android:gravity="center"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn_4"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/white_selector"
                 android:gravity="end|bottom"
@@ -185,7 +188,7 @@
             <Button
                 android:id="@+id/btn_5"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/white_selector"
@@ -200,7 +203,7 @@
             <Button
                 android:id="@+id/btn_6"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/white_selector"
@@ -215,7 +218,7 @@
             <Button
                 android:id="@+id/btn_plus"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/white_selector"
@@ -230,28 +233,30 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginTop="20dp"
+            android:layout_weight="2"
             android:gravity="center"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="130dp"
+                android:layout_height="match_parent"
                 android:layout_weight="3"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="horizontal">
 
                     <Button
                         android:id="@+id/btn_1"
                         android:layout_width="0dp"
-                        android:layout_height="60dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/white_selector"
                         android:gravity="end|bottom"
@@ -265,7 +270,7 @@
                     <Button
                         android:id="@+id/btn_2"
                         android:layout_width="0dp"
-                        android:layout_height="60dp"
+                        android:layout_height="match_parent"
                         android:layout_marginStart="10dp"
                         android:layout_weight="1"
                         android:background="@drawable/white_selector"
@@ -280,7 +285,7 @@
                     <Button
                         android:id="@+id/btn_3"
                         android:layout_width="0dp"
-                        android:layout_height="60dp"
+                        android:layout_height="match_parent"
                         android:layout_marginStart="10dp"
                         android:layout_weight="1"
                         android:background="@drawable/white_selector"
@@ -295,15 +300,16 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:layout_marginTop="10dp"
+                    android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="horizontal">
 
                     <Button
                         android:id="@+id/btn_0"
                         android:layout_width="0dp"
-                        android:layout_height="60dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="2"
                         android:background="@drawable/white_selector"
                         android:gravity="end|bottom"
@@ -317,7 +323,7 @@
                     <Button
                         android:id="@+id/btn_point"
                         android:layout_width="0dp"
-                        android:layout_height="60dp"
+                        android:layout_height="match_parent"
                         android:layout_marginStart="10dp"
                         android:layout_weight="1"
                         android:background="@drawable/white_selector"
@@ -335,7 +341,7 @@
             <Button
                 android:id="@+id/btn_equal"
                 android:layout_width="0dp"
-                android:layout_height="130dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/orange_selector"

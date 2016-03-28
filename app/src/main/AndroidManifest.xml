@@ -72,6 +72,9 @@
         <activity android:name=".NewsActivity">
 
         </activity>
+        <activity android:name=".SharedPreferencesActivity">
+
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

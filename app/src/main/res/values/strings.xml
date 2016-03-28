@@ -6,8 +6,8 @@
     <string name="btn_main_gridview">GridView</string>
     <string name="btn_main_spinner">Spinner</string>
     <string name="btn_main_progressbar">ProgressBar</string>
-    <string name="webview">WebView</string>
-    <string name="fragment">Fragment</string>
+    <string name="btn_main_webview">WebView</string>
+    <string name="btn_main_fragment">Fragment</string>
 
     <string name="c">C</string>
     <string name="del">DEL</string>
@@ -37,9 +37,9 @@
     <string name="radiobutton2">动态加载</string>
     <string name="radiobutton3">生命周期</string>
     <string name="radiobutton4">传值通信</string>
-    <string name="viewpager">ViewPager</string>
-    <string name="viewflipper">ViewFlipper</string>
-    <string name="scrollview">ScrollView</string>
+    <string name="btn_main_viewpager">ViewPager</string>
+    <string name="btn_main_viewflipper">ViewFlipper</string>
+    <string name="btn_main_scrollview">ScrollView</string>
     <string name="content">
         \tANDROID
         \n
@@ -57,6 +57,11 @@
         \n
         \t2007年11月5日，谷歌公司正式向外界展示了这款名为Android的操作系统，并且在这天谷歌宣布建立一个全球性的联盟组织，该组织由34家手机制造商、软件开发商、电信运营商以及芯片制造商共同组成，并与84家硬件制造商、软件开发商及电信营运商组成开放手持设备联盟（Open Handset Alliance）来共同研发改良Android系统，这一联盟将支持谷歌发布的手机操作系统以及应用软件，Google以Apache免费开源许可证的授权方式，发布了Android的源代码。
     </string>
-    <string name="gallery">Gallery</string>
-    <string name="seekbar">SeekBar</string>
+    <string name="btn_main_gallery">Gallery</string>
+    <string name="btn_main_seekbar">SeekBar</string>
+    <string name="btn_main_listview2">ListView2</string>
+    <string name="btn_main_asynctask">AsyncTask</string>
+    <string name="btn_main_news">News异步加载</string>
+    <string name="btn_main_sharedpreferences">SharedPreferences存储用户名-登陆界面</string>
+    <string name="btn_main_sqlite">SQLite存储</string>
 </resources>

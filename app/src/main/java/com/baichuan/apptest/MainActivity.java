@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btn_main_asynctask;
     Button btn_main_news;
     Button btn_main_sharedpreferences;
+    Button btn_main_sqlite;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_main_asynctask = (Button) findViewById(R.id.btn_main_asynctask);
         btn_main_news = (Button) findViewById(R.id.btn_main_news);
         btn_main_sharedpreferences = (Button) findViewById(R.id.btn_main_sharedpreferences);
+        btn_main_sqlite = (Button) findViewById(R.id.btn_main_sqlite);
 
         /**
          * 设置点击事件
@@ -77,6 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_main_asynctask.setOnClickListener(this);
         btn_main_news.setOnClickListener(this);
         btn_main_sharedpreferences.setOnClickListener(this);
+        btn_main_sqlite.setOnClickListener(this);
     }
 
     /**
@@ -137,6 +140,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_main_sharedpreferences:
                 mStartActivity(SharedPreferencesActivity.class);
+                break;
+            case R.id.btn_main_sqlite:
+                mStartActivity(SQLiteActivity.class);
                 break;
             default:
                 break;

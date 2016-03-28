@@ -36,7 +36,7 @@
                 android:id="@+id/btn_main_listview2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ListView2"
+                android:text="@string/btn_main_listview2"
                 android:textAllCaps="false" />
 
             <Button
@@ -67,70 +67,78 @@
                 android:id="@+id/btn_main_webview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/webview" />
+                android:text="@string/btn_main_webview" />
 
             <Button
                 android:id="@+id/btn_main_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/fragment"
+                android:text="@string/btn_main_fragment"
                 android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/btn_main_viewpager"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/viewpager"
+                android:text="@string/btn_main_viewpager"
                 android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/btn_main_viewflipper"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/viewflipper"
+                android:text="@string/btn_main_viewflipper"
                 android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/btn_main_scrollview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/scrollview"
+                android:text="@string/btn_main_scrollview"
                 android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/btn_main_gallery"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/gallery"
+                android:text="@string/btn_main_gallery"
                 android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/btn_main_seekbar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/seekbar"
+                android:text="@string/btn_main_seekbar"
                 android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/btn_main_asynctask"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="AsyncTask"
+                android:text="@string/btn_main_asynctask"
                 android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/btn_main_news"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="News异步加载"
+                android:text="@string/btn_main_news"
                 android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/btn_main_sharedpreferences"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SharedPreferences存储用户名-登陆界面"
+                android:text="@string/btn_main_sharedpreferences"
                 android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_main_sqlite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_main_sqlite"
+                android:textAllCaps="false" />
+
         </com.baichuan.otherclass.AutoNextLineLinearlayout>
 
     </LinearLayout>

@@ -33,6 +33,13 @@
                 android:text="@string/btn_main_listview" />
 
             <Button
+                android:id="@+id/btn_main_listview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ListView2"
+                android:textAllCaps="false" />
+
+            <Button
                 android:id="@+id/btn_main_picker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -105,13 +112,6 @@
                 android:textAllCaps="false" />
 
             <Button
-                android:id="@+id/btn_main_listview2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ListView2"
-                android:textAllCaps="false" />
-
-            <Button
                 android:id="@+id/btn_main_asynctask"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -129,7 +129,7 @@
                 android:id="@+id/btn_main_sharedpreferences"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SharedPreferences"
+                android:text="SharedPreferences存储用户名-登陆界面"
                 android:textAllCaps="false" />
         </com.baichuan.otherclass.AutoNextLineLinearlayout>
 

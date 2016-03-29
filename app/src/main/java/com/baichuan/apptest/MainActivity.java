@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btn_main_sharedpreferences;
     Button btn_main_sqlite;
     Button btn_main_file;
+    Button btn_main_contentProvider;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_main_sharedpreferences = (Button) findViewById(R.id.btn_main_sharedpreferences);
         btn_main_sqlite = (Button) findViewById(R.id.btn_main_sqlite);
         btn_main_file = (Button) findViewById(R.id.btn_main_file);
+        btn_main_contentProvider = (Button) findViewById(R.id.btn_main_contentProvider);
 
         /**
          * 设置点击事件
@@ -83,6 +85,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_main_sharedpreferences.setOnClickListener(this);
         btn_main_sqlite.setOnClickListener(this);
         btn_main_file.setOnClickListener(this);
+        btn_main_contentProvider.setOnClickListener(this);
     }
 
     /**
@@ -149,6 +152,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_main_file:
                 mStartActivity(FileActivity.class);
+                break;
+            case R.id.btn_main_contentProvider:
+                mStartActivity(ContentProviderActivity.class);
                 break;
             default:
                 break;

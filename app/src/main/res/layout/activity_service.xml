@@ -6,4 +6,70 @@
 
     <include layout="@layout/common_title" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start:" />
+
+    <Button
+        android:id="@+id/service_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doClick"
+        android:text="@string/service_start" />
+
+    <Button
+        android:id="@+id/service_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doClick"
+        android:text="@string/service_stop" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bind:" />
+
+    <Button
+        android:id="@+id/service_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doClick"
+        android:text="@string/service_bind" />
+
+    <Button
+        android:id="@+id/service_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doClick"
+        android:text="@string/service_play" />
+
+    <Button
+        android:id="@+id/service_pause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doClick"
+        android:text="@string/service_pause" />
+
+    <Button
+        android:id="@+id/service_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doClick"
+        android:text="@string/service_next" />
+
+    <Button
+        android:id="@+id/service_previous"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doClick"
+        android:text="@string/service_previous" />
+
+    <Button
+        android:id="@+id/service_unbind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doClick"
+        android:text="@string/service_unbind" />
+
 </LinearLayout>

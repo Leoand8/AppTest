@@ -97,6 +97,9 @@
         <activity android:name=".ServiceActivity">
 
         </activity>
+
+        <service android:name="com.baichuan.service.MyStartService" />
+        <service android:name="com.baichuan.service.MyBindService" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

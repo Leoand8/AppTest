@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
      */
     public void doClick(View v) {
         switch (v.getId()) {
+            case R.id.btn_main_systemService:
+                mStartActivity(SystemServiceActivity.class);
+                break;
             case R.id.btn_main_service:
                 mStartActivity(ServiceActivity.class);
                 break;

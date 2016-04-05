@@ -193,6 +193,14 @@
                     android:text="@string/btn_main_service"
                     android:textAllCaps="false" />
 
+                <Button
+                    android:id="@+id/btn_main_systemService"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="doClick"
+                    android:text="@string/btn_main_systemService"
+                    android:textAllCaps="false" />
+
             </com.baichuan.otherclass.AutoNextLineLinearlayout>
 
         </LinearLayout>

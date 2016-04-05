@@ -80,4 +80,6 @@
     <string name="service_next">下一首</string>
     <string name="service_previous">上一首</string>
     <string name="service_unbind">UnBindService</string>
+    <string name="btn_main_systemService">SystemService</string>
+    <string name="ss_btn_network">判断网络是否连接</string>
 </resources>

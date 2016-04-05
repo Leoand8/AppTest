@@ -66,4 +66,10 @@
     <string name="btn_main_sqlite">SQLite存储</string>
     <string name="btn_main_file">File文件存储</string>
     <string name="btn_main_contentProvider">ContentProvider</string>
+    <string name="cp_btn_insert">插入联系人</string>
+    <string name="btn_main_broadcastreceiver">BroadcastReceiver广播接收器</string>
+    <string name="broadcastReceiver_send1">发送一条普通广播</string>
+    <string name="broadcastReceiver_send2">发送一条有序广播</string>
+    <string name="broadcastReceiver_send3">发送一条异步广播</string>
+    <string name="btn_main_service">Service</string>
 </resources>

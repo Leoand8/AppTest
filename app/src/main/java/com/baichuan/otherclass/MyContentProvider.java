@@ -9,7 +9,11 @@ import android.support.annotation.Nullable;
 /**
  * Uri是指通用资源标识符如：
  * content://com.imooc.provider/music/#
- * 前缀表明数据受控于一个内容提供者，从不修改，也就是schema
+ * content:// 表明数据受控于一个内容提供者，从不修改，也就是schema
+ * com.imooc.provider/ 是指在AndroidMainfest.xml中我们注册的Provider中的android:authorities属性所对应的
+ * music/ 指具体操作与哪个条目
+ * # 指具体指定到哪个条目下的哪条记录（#表示通配符）
+ *
  * Created by Administrator on 2016/3/29.
  */
 public class MyContentProvider extends ContentProvider {

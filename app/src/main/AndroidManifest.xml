@@ -84,9 +84,25 @@
         <activity android:name=".ContentProviderActivity">
 
         </activity>
+        <activity android:name=".BroadcastReceiverActivity">
+
+        </activity>
+
+        <receiver android:name="com.baichuan.otherclass.BC1">
+            <intent-filter android:priority="100">
+                <action android:name="com.baichuan.apptest.BroadcastReceiverActivity" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ServiceActivity">
+
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
 
 </manifest>

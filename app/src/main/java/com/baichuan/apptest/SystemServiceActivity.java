@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Toast;
 
 /**
  * Created by Administrator on 2016/4/5.
@@ -25,7 +26,11 @@ public class SystemServiceActivity extends AppCompatActivity {
     public void doClick(View v) {
         switch (v.getId()) {
             case R.id.ss_btn_network:
-
+                if (isNetWorkConnected(SystemServiceActivity.this) == true) {
+                    Toast.makeText(SystemServiceActivity.this, "网络已经打开，但不知道是WiFi还是移动网络", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(SystemServiceActivity.this, "网络未连接", Toast.LENGTH_SHORT).show();
+                }
                 break;
         }
     }

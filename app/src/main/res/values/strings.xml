@@ -82,4 +82,10 @@
     <string name="service_unbind">UnBindService</string>
     <string name="btn_main_systemService">SystemService</string>
     <string name="ss_btn_network">判断网络是否连接</string>
+    <string name="ss_btn_wifi">开关WIFI</string>
+    <string name="ss_btn_voice">获取系统音量</string>
+    <string name="ss_btn_package">获取当前进程包名</string>
+    <string name="btn_main_gesturedetector">手势识别</string>
+    <string name="btn_main_handler">Handler机制</string>
+    <string name="handler_btn">停止handler滚动</string>
 </resources>

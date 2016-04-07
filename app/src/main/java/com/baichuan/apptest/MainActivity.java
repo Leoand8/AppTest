@@ -18,10 +18,17 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * 按钮点击事件，根据ID获取
+     *
      * @param v
      */
     public void doClick(View v) {
         switch (v.getId()) {
+            case R.id.btn_main_handler:
+                mStartActivity(HandlerActivity.class);
+                break;
+            case R.id.btn_main_gesturedetector:
+                mStartActivity(GestureDetectorActivity.class);
+                break;
             case R.id.btn_main_systemService:
                 mStartActivity(SystemServiceActivity.class);
                 break;

@@ -12,4 +12,25 @@
         android:layout_height="wrap_content"
         android:onClick="doClick"
         android:text="@string/ss_btn_network" />
+
+    <Button
+        android:id="@+id/ss_btn_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doClick"
+        android:text="@string/ss_btn_wifi" />
+
+    <Button
+        android:id="@+id/ss_btn_voice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doClick"
+        android:text="@string/ss_btn_voice" />
+
+    <Button
+        android:id="@+id/ss_btn_package"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doClick"
+        android:text="@string/ss_btn_package" />
 </LinearLayout>

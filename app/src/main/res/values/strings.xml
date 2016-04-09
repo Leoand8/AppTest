@@ -88,4 +88,5 @@
     <string name="btn_main_gesturedetector">手势识别</string>
     <string name="btn_main_handler">Handler机制</string>
     <string name="handler_btn">停止handler滚动</string>
+    <string name="btn_main_handlerlooper">HandlerLooper机制</string>
 </resources>

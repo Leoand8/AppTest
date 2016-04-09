@@ -120,6 +120,9 @@
         <activity android:name=".HandlerActivity">
 
         </activity>
+        <activity android:name=".HandlerLooperActivity">
+
+        </activity>
     </application>
 
 </manifest>

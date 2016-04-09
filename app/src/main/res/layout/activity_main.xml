@@ -216,6 +216,14 @@
                     android:onClick="doClick"
                     android:text="@string/btn_main_handler"
                     android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btn_main_handlerlooper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="doClick"
+                    android:text="@string/btn_main_handlerlooper"
+                    android:textAllCaps="false" />
             </com.baichuan.otherclass.AutoNextLineLinearlayout>
 
         </LinearLayout>

@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
      */
     public void doClick(View v) {
         switch (v.getId()) {
+            case R.id.btn_main_handlerlooper:
+                mStartActivity(HandlerLooperActivity.class);
+                break;
             case R.id.btn_main_handler:
                 mStartActivity(HandlerActivity.class);
                 break;
